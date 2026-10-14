@@ -73,6 +73,11 @@ public class SWhackMonster : MonoBehaviour
         {
             Whack();
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+            Debug.Log("Quit Game!");
+        }
     }
 
     public void AddScore(int monsterIndex)
